@@ -1,0 +1,78 @@
+/* Estilo general para la barra de navegación */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff200; /* Fondo amarillo */
+  padding: 10px;
+  border-bottom: 1px solid #6d6e71; /* Borde gris */
+}
+
+.logo-img {
+  width: 150px; /* Tamaño grande del logo, ajusta según sea necesario */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px; /* Tamaño máximo para la barra de navegación */
+}
+
+.nav-link {
+  text-align: center;
+  font-size: 18px;
+  color: #000; /* Color del texto */
+}
+
+
+.nav-linky {
+  text-align: right;
+  font-size: 28px;
+  color: #000;
+  width: 3px;
+  margin-left: -23%;
+  padding: 0px; /* Color del texto */
+}
+
+.nav-link i {
+  font-size: 24px; /* Tamaño de los iconos */
+  margin-bottom: 5px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin-bottom: 0;
+  }
+
+  .nav-linky {
+    text-align: right;
+    font-size: 28px;
+    color: #000;
+    
+    margin-left: -2%;
+    padding: 0px; /* Color del texto */
+  }
+
+  .nav-link .nav-text {
+    display: none; /* Ocultar el texto en vistas móviles */
+  }
+
+  .nav-link i {
+    font-size: 30px; /* Tamaño de los iconos en móvil */
+  }
+}
